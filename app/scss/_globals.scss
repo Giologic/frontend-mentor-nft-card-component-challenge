@@ -1,0 +1,57 @@
+// Global Settings
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+// All Selectors + Pseudoselectors
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+// Make sure no layouting nuiances
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  background-color: $dark-blue-bg;
+}
+
+p, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  color: $dark-blue-line;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+
+  &-col {
+    flex-direction: column;
+  }
+
+  &-gap-1 {
+    gap: 1.125rem;
+  }
+
+  &-jc-c {
+    justify-content: center;
+  }
+
+  &-jc-sb {
+    justify-content: space-between;
+  }
+
+  &-ai-c {
+    align-items: center;
+  }
+}
+
+

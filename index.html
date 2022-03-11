@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="dist/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container flex flex-jc-c flex-ai-c">
+    <div class="nft-card">
+      <div class="nft-card__image">
+        <img src="images/image-equilibrium.jpg" alt="Equilibrium NFT">
+        <div class="nft-card__image__overlay">
+          <a href="#" class="icon">
+            <img src="images/icon-view.svg" alt="View NFT">
+          </a>
+        </div>
+      </div>
+      <div class="nft-card__content flex flex-col flex-gap-1">
+        <h3>Equilibrium #3429</h3>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+        <div class="nft-card__status flex flex-jc-sb flex-ai-c">
+          <span class="price">
+            <i><img src="images/icon-ethereum.svg" alt="ETH icon"></i>
+            0.041 ETH
+          </span>
+          <span class="countdown">
+            <i><img src="images/icon-clock.svg" alt="clock icon"></i>
+            3 days left
+          </span>
+        </div>
+      </div>
+      <hr />
+      <div class="nft-card__footer">
+        <!-- Use ::before for image or use span -->
+        <div class="flex flex-ai-c">
+          <img src="images/image-avatar.png" alt="Avatar">
+          <p>Creation of <span>Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
