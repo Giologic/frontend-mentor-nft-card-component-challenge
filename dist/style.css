@@ -80,21 +80,11 @@ hr {
 
 .nft-card__image {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background: url("../../images/image-equilibrium.jpg");
+  height: 300px;
+  background-size: 100%;
+  border-radius: 12px;
   /* The icon inside the overlay is positioned in the middle vertically and horizontally */
-}
-
-.nft-card__image img {
-  max-width: 100%;
-  border-radius: 0.75rem;
 }
 
 .nft-card__image__overlay {
@@ -105,17 +95,16 @@ hr {
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 1;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-  background-color: rgba(0, 255, 247, 0.5);
-  display: none;
+  background-color: rgba(0, 255, 247, 0.4);
+  opacity: 0;
   cursor: pointer;
   border-radius: 0.75rem;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .nft-card__image:hover .nft-card__image__overlay {
-  display: block;
+  opacity: 1;
 }
 
 .nft-card__image .icon {

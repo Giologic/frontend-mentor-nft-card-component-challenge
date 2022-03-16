@@ -13,14 +13,10 @@
 
   &__image {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    img {
-      max-width: 100%;
-      border-radius: 0.75rem;
-    }
+    background: url('../../images/image-equilibrium.jpg');
+    height: 300px;
+    background-size:100%;
+    border-radius: 12px;
 
     &__overlay {
       position: absolute;
@@ -30,16 +26,15 @@
       right: 0;
       height: 100%;
       width: 100%;
-      opacity: 1;
-      transition: .3s ease;
-      background-color: rgba( $cyan, .5 );
-      display: none;
+      background-color: rgba( $cyan, 0.4 );
+      opacity: 0;
       cursor: pointer;
       border-radius: 0.75rem;
+      transition: opacity 0.3s ease;
     }
 
     &:hover &__overlay {
-      display: block;
+      opacity: 1;
     }
 
     /* The icon inside the overlay is positioned in the middle vertically and horizontally */
